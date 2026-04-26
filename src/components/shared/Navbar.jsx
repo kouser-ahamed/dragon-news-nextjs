@@ -16,7 +16,9 @@ const Navbar = () => {
           <NavLink href={"/about-us"}>About</NavLink>
         </li>
         <li>
-          <NavLink href={"/career"}>Career</NavLink>
+          <NavLink href={"/career"} className={"text-yellow-500"}>
+            Career
+          </NavLink>
         </li>
       </ul>
       <div className="flex gap-2 items-center">
