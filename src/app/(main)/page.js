@@ -1,4 +1,5 @@
 import LeftSidebar from "@/components/shared/homepage/news/LeftSidebar";
+import RightSidebar from "@/components/shared/homepage/news/RightSidebar";
 import { Span } from "next/dist/trace";
 import Image from "next/image";
 
@@ -19,8 +20,8 @@ export default async function Home() {
         <LeftSidebar categories={categories} activeId={null}> </LeftSidebar>
       </div>
       <div className="font-bold text-3xl bg-pink-500 col-span-6">All News</div>
-      <div className="font-bold text-3xl bg-amber-300 col-span-3">
-        Social Icons
+      <div className="col-span-3">
+        <RightSidebar> </RightSidebar>
       </div>
     </div>
   );
