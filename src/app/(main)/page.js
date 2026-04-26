@@ -1,3 +1,4 @@
+import LeftSidebar from "@/components/shared/homepage/news/LeftSidebar";
 import { Span } from "next/dist/trace";
 import Image from "next/image";
 
@@ -15,19 +16,7 @@ export default async function Home() {
   return (
     <div className="container mx-auto grid grid-cols-12 gap-4 my-[60px]">
       <div className="col-span-3">
-        <h2 className="font-bold text-lg ">All Categories</h2>
-        <ul className="flex flex-col gap-3 mt-6">
-          {categories.news_category.map((category) => {
-            return (
-              <li
-                key={category.category_id}
-                className="bg-slate-100 p-2 rounded-md font-bold text-center text-md"
-              >
-                {category.category_name}
-              </li>
-            );
-          })}
-        </ul>
+        <LeftSidebar categories={categories} activeId={null}> </LeftSidebar>
       </div>
       <div className="font-bold text-3xl bg-pink-500 col-span-6">All News</div>
       <div className="font-bold text-3xl bg-amber-300 col-span-3">
