@@ -4,14 +4,14 @@ import React from "react";
 const LeftSidebar = ({ categories, activeId }) => {
   return (
     <div>
-      <h2 className="font-bold text-lg ">All Categories</h2>
+      <h2 className="font-bold text-lg ">All Caterogy</h2>
       <ul className="flex flex-col gap-3 mt-6">
         {categories.news_category.map((category) => {
           return (
             <li
               key={category.category_id}
               className={`
-                ${activeId == category.category_id && " bg-slate-100"}
+                ${activeId == category.category_id && " bg-purple-500 text-white"}
                 rounded-md font-bold text-center text-md`}
             >
               <Link
