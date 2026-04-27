@@ -1,3 +1,4 @@
+import RightSidebar from "@/components/shared/homepage/news/RightSidebar";
 import { getNewsDetailsById } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
@@ -43,7 +44,9 @@ const NewsDetailsPage = async ({ params }) => {
           </div>
         </div>
       </div>
-      <div className="col-span-3"></div>
+      <div className="col-span-3">
+        <RightSidebar> </RightSidebar>
+      </div>
     </div>
   );
 };
