@@ -66,7 +66,7 @@ const NewsCard = ({ news }) => {
         </Link>
 
         {/* Footer */}
-        <div className="flex justify-between items-center pt-2 border-t text-sm text-gray-500">
+        <div className="flex justify-between items-center py-4 border-t text-lg text-gray-500 mt-3">
 
           {/* Rating */}
           <div className="flex items-center gap-1 text-yellow-400 -400">
